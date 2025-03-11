@@ -1,0 +1,392 @@
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    color: purple;
+    background: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+main {
+    margin: 20px;
+    /* filter: blur(15px); */
+}
+
+
+.loginpage {
+    width: 50%;
+    height: 440px;
+    background-color: black;
+    position: fixed;
+    /* Ensure it's positioned relative to the viewport */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    padding: 34px;
+    color: white;
+    /* border: 2px solid transparent; */
+    border-radius: 12px;
+    box-shadow: 0 0 15px white, 0 0 15px white inset;
+    display: flex;
+    flex-direction: column;
+    max-width: 508px;
+}
+
+.loginpage h2 {
+    font-size: 35px;
+    border-left: 7px solid purple;
+    padding-left: 13px;
+}
+
+.loginpage label {
+    margin-top: 22px;
+    margin-left: 4px;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.loginpage input {
+    width: 100%;
+    padding: 10px 10px 10px 20px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.79);
+    margin-top: 15px;
+    font-size: 18px;
+    /* padding-left: 100px; */
+}
+
+.loginpage input:hover {
+    border-color: purple;
+}
+
+.loginpage button {
+    margin-top: 43px;
+    width: 70%;
+    align-self: center;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 23px;
+    padding: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.loginpage button:hover {
+    border-color: purple;
+    color: purple;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav h2 {
+    margin: 23px;
+    font-size: 43px;
+    padding-left: 23px;
+    border-left: 5px solid white;
+    border-top: 5px solid white;
+}
+
+nav h2:hover {
+    cursor: pointer;
+}
+
+.links {
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.links a {
+    color: black;
+    margin: 12px;
+    font-size: 20px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.links a:hover {
+    color: purple;
+    transition-duration: 0.3s;
+}
+
+span {
+    color: purple;
+}
+
+.content {
+    margin: 105px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-area {
+    width: 70%;
+}
+
+.side-me {
+    background-image: url(pf_pic.jpg);
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.upper-para {
+    font-size: 33px;
+}
+
+.name {
+    font-size: 54px;
+}
+
+.lower-para {
+    width: 100%;
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+
+
+
+
+
+/* Skills */
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    padding-left: 43px;
+    padding-right: 43px;
+    box-sizing: border-box;
+    margin-top: 200px;
+}
+
+.skill-head {
+    color: white;
+}
+
+.skill-head h2 {
+    font-size: 50px;
+    margin-bottom: 43px;
+    border-right: 5px solid white;
+    border-bottom: 5px solid white;
+    padding-right: 23px;
+}
+
+.skill-box {
+    width: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.skill-content {
+    margin: 23px;
+    background-color: black;
+    min-width: 190px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px white;
+    padding: 12px;
+}
+
+.skill-content h2 {
+    color: white;
+    padding-bottom: 2px;
+    border-bottom: 4px solid purple;
+}
+
+.skill-content p {
+    color: rgba(240, 248, 255, 0.899);
+    padding: 12px;
+    line-height: 1.9;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.skill-content button {
+    padding: 13px;
+    border: 2px solid purple;
+    background-color: black;
+    color: purple;
+}
+
+.skill-content button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+    border-color: white;
+    transition-duration: 0.4s;
+    color: white;
+}
+
+
+
+
+
+
+
+
+/* ContactUs */
+.contact-us {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 250px;
+    margin-bottom: 160px;
+}
+
+.contact-body {
+    width: 50%;
+    background-color: black;
+    box-shadow: 0 0 10px white;
+    border: 2px solid white;
+    border-radius: 12px;
+    color: white;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.contact-body h2 {
+    color: purple;
+    font-size: 30px;
+    margin-bottom: 12px;
+    border-left: 4px solid white;
+    border-bottom: 4px solid white;
+    padding-left: 12px;
+}
+
+.contact-body label {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.contact-body input {
+    margin-top: 5px;
+    font-size: 17px;
+    padding: 8px;
+    border: 2px solid purple;
+    background-color: black;
+    color: white;
+}
+
+.contact-body button {
+    padding: 10px;
+    margin-top: 22px;
+    width: 100px;
+    align-self: center;
+    background-color: black;
+    border: 2px solid purple;
+    box-shadow: 0 0 10px purple;
+    color: purple;
+    letter-spacing: 2px;
+
+}
+
+.contact-body button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+    border-color: white;
+    color: white;
+}
+
+
+
+
+
+/* Media Query */
+@media (max-width:786px) {
+    .skill-box {
+        grid-template-columns: auto;
+    }
+
+    .content {
+        margin: 0;
+        flex-direction: column-reverse;
+        margin-top: 45px;
+        box-sizing: border-box;
+    }
+
+    nav {
+        /* display: block; */
+        flex-direction: column;
+    }
+
+    .links {
+        margin-top: 30px;
+        align-self: center;
+    }
+
+    nav h2 {
+        margin: 0;
+        align-self: center;
+    }
+
+    .upper-para {
+        font-size: 23px;
+    }
+
+    .name {
+        font-size: 40px;
+    }
+
+    .lower-para {
+        margin-top: 53px;
+        font-size: 16px;
+    }
+
+    .side-me {
+
+        width: 120px;
+        height: 120px;
+    }
+
+    .text-area {
+        margin-top: 52px;
+    }
+
+    .skills {
+        margin-top: 120px;
+    }
+
+    main {
+        margin: 10px;
+    }
+
+    .skill-head h2 {
+        font-size: 40px;
+    }
+}
