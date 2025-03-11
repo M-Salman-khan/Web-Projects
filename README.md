@@ -4,7 +4,7 @@ This repository contains many mini projects. Feel free to contribute to the proj
 
 | Mini Project Name                              | Status |
 | :--------------------------------------------- | :----: |
-| Personal Portfolio Website                     |   ⏳   |
+| Personal Portfolio Website                     |   ✅   |
 | Responsive Resume Page                         |   ⏳   |
 | Tribute Page                                   |   ⏳   |
 | College Club Website                           |   ⏳   |
