@@ -37,8 +37,6 @@ A simple yet effective Todo List web application that helps you manage your task
 ## 🤝 Contributing
 Contributions are welcome! Feel free to fork the repository and submit pull requests.
 
-## 📄 License
-This project is open-source and available under the [MIT License](LICENSE).
 
 ## 📧 Contact
 For questions or feedback, feel free to connect on [LinkedIn](https://www.linkedin.com/in/m-salman-khan-/).
