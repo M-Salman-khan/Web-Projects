@@ -1,9 +1,5 @@
 
 const apiKey = "d2a470a60cf3c4fb76c39311cbdaaf32"
-// console.log(apiKey);
-
-// const city = 'Saharanpur';
-// const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
 
 const now = new Date();
 const hours = now.getHours();
