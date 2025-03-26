@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="shortcut icon" href="thumbnail.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-color: #eef8f2;
+    }
+
+    .navbar {
+      background-color: #d4ede5 !important;
+    }
+
+    .card {
+      margin-top: 20px;
+    }
+
+    .card-body {
+      text-align: center;
+      line-height: 1.3;
+      border: 1px solid #0d6efd;
+      border-radius: 5px;
+    }
+
+    .card h3 {
+      color: black;
+      font-weight: bold;
+    }
+
+    .card p {
+      margin: 5px 0;
+    }
+
+    .table {
+      background-color: white;
+    }
+
+    .table th {
+      background-color: #f8f9fa;
+    }
+    .card-body button{
+      margin-top: 12px;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#" onclick="location.reload()">Weather App</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#" onclick="location.reload()">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Search Bar -->
+  <div class="container text-center my-4">
+    <input type="text" class="form-control w-50 d-inline-block search" placeholder="Search for cities">
+    <button class="btn btn-outline-success search" onclick="SearchData()">Search</button>
+  </div>
+
+  <!-- Weather for Delhi -->
+  <div class="container text-center">
+    <h2 class="head">Weather for Saharanpur</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body temp-card">
+          
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body humidity-card">
+           
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body wind-card">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Table -->
+  <div class="container my-5 other-cities">
+    <h3 class="text-center">Weather of other common cities</h3>
+    <table class="table table-bordered text-center">
+      <thead>
+        <tr>
+          <th>City</th>
+          <th>Cloud pct</th>
+          <th>Feels like</th>
+          <th>Humidity</th>
+          <th>Max temp</th>
+          <th>Sunrise</th>
+          <th>Sunset</th>
+          <th>Temp</th>
+          <th>Wind degrees</th>
+          <th>Wind speed</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="Roorkee">
+          
+        </tr>
+        <tr class="Dehradun">
+
+        </tr>
+        <tr class="Delhi">
+          
+        </tr>
+        <tr class="Ludhiana">
+          
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    
+    
+  </script>
+</body>
+
+</html>
