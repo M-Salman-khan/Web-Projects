@@ -20,7 +20,7 @@ A simple weather application that fetches real-time weather data for different c
 ## ⚙️ Installation  
 1. Clone the repository:  
    ```sh
-   git clone https://github.com/yourusername/weather-app.git
+   git clone https://github.com/M-Salman-khan/weather-app.git
    ```
 2. Open `index.html` in a browser.  
 
