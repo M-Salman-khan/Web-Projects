@@ -22,7 +22,7 @@ This repository contains many mini projects. Feel free to contribute to the proj
 | Recipe Website                                 |   ⏳   |
 | Bookstore Website                              |   ⏳   |
 | Online Quiz Website                            |   ⏳   |
-| Online Calculator                              |   ⏳   |
+| Online Calculator                              |   ✅   |
 | To-Do List Website                             |   ✅   |
 | Historical Timeline Page                       |   ⏳   |
 | Periodic Table Website                         |   ⏳   |

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online-Calculator</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        main {
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(32, 31, 31);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 450px;
+            height: 450px;
+            background-color: #5fb9d6;
+            border: 2px solid transparent;
+            border-radius: 10px;
+            padding: 23px;
+            box-shadow: 0 0 10px 4px white;
+        }
+
+        .calci-head {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        i {
+            font-size: 25px;
+
+        }
+
+        i:hover,
+        .head-text:hover {
+            color: white;
+            cursor: pointer;
+            transition-duration: 0.3s;
+        }
+
+        .head-text {
+            font-size: 30px;
+            text-decoration: underline;
+            text-decoration-thickness: 4px;
+        }
+
+        .calci-input {
+            background-color: white;
+            width: 100%;
+            display: flex;
+            border-radius: 10px;
+            align-items: center;
+            margin-top: 24px;
+            height: 40px;
+        }
+
+        #input {
+            border: 3px solid transparent;
+            border-radius: 10px;
+            width: 100%;
+            font-size: 20px;
+            height: 40px;
+            padding-left: 13px;
+            color: rgba(33, 32, 32, 0.842);
+            font-weight: 550;
+        }
+
+        .numberplate {
+            background-color: rgba(0, 0, 0, 0.686);
+            margin-top: 22px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .answere {
+            padding-left: 12px;
+            display: none;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            color: rgb(33, 32, 32);
+
+        }
+
+        .num-n {
+            height: 57px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: beige;
+            border: 2px solid transparent;
+            border-radius: 10px;
+            font-size: 1.5em;
+            color: rgb(70, 69, 69);
+            margin: 12px;
+        }
+
+        .num-n:hover {
+            cursor: pointer;
+            color: black;
+            font-size: 1.6em;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="calci-head">
+                <h2 class="head-text">Calculator</h2>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="calci-input">
+                <input id="input" type="text" placeholder="Enter Calculation">
+                <p class="answere">Your ans is : </p>
+            </div>
+            <div class="numberplate">
+                <div class="num-n" onclick="addNum(1)">1</div>
+                <div class="num-n" onclick="addNum(2)">2</div>
+                <div class="num-n" onclick="addNum(3)">3</div>
+                <div class="num-n" onclick="addNum(4)">4</div>
+                <div class="num-n" onclick="addNum(5)">5</div>
+                <div class="num-n" onclick="addNum(6)">6</div>
+                <div class="num-n" onclick="addNum(7)">7</div>
+                <div class="num-n" onclick="addNum(8)">8</div>
+                <div class="num-n" onclick="addNum(9)">9</div>
+                <div class="num-n" onclick="addNum(0)">0</div>
+                <div class="num-n" onclick="addNum('+')">+</div>
+                <div class="num-n" onclick="addNum('-')">-</div>
+                <div class="num-n" onclick="addNum('/')">/</div>
+                <div class="num-n" onclick="addNum('*')">*</div>
+                <div class="num-n calc">=</div>
+                <div class="num-n" onclick="clearInput()">Clear</div>
+
+            </div>
+        </div>
+    </main>
+    <script>
+
+        let userInput = document.querySelector("#input")
+        let para = document.querySelector(".answere")
+        let equalsTo = document.querySelector(".calc")
+        let html = ""
+
+        function addNum(sym) {
+            html += sym;
+            userInput.value = html;
+            console.log(html)
+        }
+
+        function clearInput() {
+            userInput.value = ''
+        }
+
+        equalsTo.addEventListener("click", () => {
+            console.log(userInput.value)
+            let ans = eval(userInput.value)
+            console.log(parseInt(ans))
+            userInput.value = ans
+        })
+    </script>
+</body>
+
+</html>
