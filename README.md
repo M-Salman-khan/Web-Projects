@@ -28,6 +28,6 @@ This repository contains many mini projects. Feel free to contribute to the proj
 | Periodic Table Website                         |   ⏳   |
 | Student Notes Sharing Page                     |   ⏳   |
 | Language Learning Page                         |   ⏳   |
-| Weather Information Page                       |   ⏳   |
+| Weather Information Page                       |   ✅   |
 
 🚀 Feel free to contribute and explore these exciting projects!
