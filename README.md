@@ -21,7 +21,7 @@ This repository contains many mini projects. Feel free to contribute to the proj
 | Hackathon Website                              |   ⏳   |
 | Recipe Website                                 |   ⏳   |
 | Bookstore Website                              |   ⏳   |
-| Online Quiz Website                            |   ⏳   |
+| Online Quiz Website                            |   ✅   |
 | Online Calculator                              |   ✅   |
 | To-Do List Website                             |   ✅   |
 | Historical Timeline Page                       |   ⏳   |
