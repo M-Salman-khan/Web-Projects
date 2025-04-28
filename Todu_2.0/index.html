@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        :root {
+            --borderColor: rgb(236, 239, 241);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Press Start 2P", system-ui;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(58, 120, 27);
+            height: 100dvh;
+            width: 100dvw;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .section-1 {
+            height: 200px;
+            /* width: ; */
+            background-color: transparent;
+            /* border: 5px solid var(--borderColor); */
+            width: 100%;
+            border-radius: 20px;
+            display: flex;
+
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .section-2 {
+            height: 300px;
+            border: 5px solid var(--borderColor);
+            width: 100%;
+            background-color: var(--borderColor);
+            border-radius: 20px;
+        }
+
+        .time {
+            border: 5px solid var(--borderColor);
+            height: 80%;
+            width: 35%;
+            background-color: var(--borderColor);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 30px;
+        }
+
+        .date {
+            background-color: rgb(58, 120, 27);
+            padding: 15px 9px;
+            border-radius: 50%;
+            color: white;
+        }
+
+        .progressTask {
+            width: 60%;
+            height: 80%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            background-color: transparent;
+        }
+
+        .progress {
+            height: 30%;
+            padding: 20px;
+            background-color: var(--borderColor);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            border: 4px solid var(--borderColor);
+            border-radius: 30px;
+
+        }
+
+        .task {
+            background-color: transparent;
+            height: 40%;
+            border: 2px solid transparent;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            /* padding-left: 10px; */
+        }
+
+        input {
+            width: 80%;
+            height: 70%;
+            /* border: 2px solid transparent; */
+            border: 4px solid var(--borderColor);
+            border-radius: 100px;
+            padding-left: 20px;
+            font-size: 10px;
+            outline: none;
+            background-color: aliceblue;
+            font-family: "Press Start 2P", system-ui;
+        }
+
+        main {
+            width: 80%;
+            max-width: 971px;
+            min-width: 486px;
+        }
+
+        progress {
+            height: 25px;
+        }
+
+        .task>button {
+            padding: 2px 10px;
+            border-radius: 12px;
+            border: 3px solid rgb(236, 239, 241);
+            background-color: transparent;
+            color: var(--borderColor);
+            font-size: 25px;
+            cursor: pointer;
+            width: 15%;
+            height: 70%;
+        }
+
+        .task>button:hover {
+            background-color: rgb(232, 244, 255);
+            color: rgb(58, 120, 27);
+            transition-duration: 0.4s;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            padding-left: 60px;
+            list-style-type: disc;
+        }
+
+        .taskItems {
+            overflow-y: scroll;
+            max-height: 220px;
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 20px;
+        }
+
+        .completed {
+            text-decoration: line-through;
+            color: gray;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <section class="section-1">
+            <div class="time">
+                <div class="day">Thursday</div>
+                <div class="date">31</div>
+                <div class="month">February</div>
+            </div>
+            <div class="progressTask">
+                <div class="progress">
+                    <p class="progessText">Progression</p>
+                    <progress value="20" max="100"></progress>
+                </div>
+                <div class="task">
+                    <input type="text" id="taskInput" placeholder="Enter your task">
+                    <button onclick="addTask()">+</button>
+                </div>
+            </div>
+        </section>
+        <section class="section-2">
+            <ul class="taskItems">
+
+            </ul>
+        </section>
+    </main>
+    <script>
+        let Day = document.querySelector(".day")
+        let taskInput = document.querySelector("#taskInput")
+        let taskItems = document.querySelector(".taskItems")
+        let date = document.querySelector(".date")
+        let Month = document.querySelector(".month")
+        const today = new Date();
+        const weekday = today.toLocaleString('en-US', { weekday: 'long' }); // Get weekday name
+        Day.innerText = weekday
+        const day = today.getDate(); // Get day number
+        date.innerText = day
+        const month = today.toLocaleString('en-US', { month: 'long' }); // Get month name
+        Month.innerText = month
+        let n = 0
+        function addTask() {
+            task = taskInput.value
+            if (task) {
+                taskElement = document.createElement("li");
+                taskElement.setAttribute('id', n)
+                taskElement.textContent = task;
+                taskElement.style.cursor = "pointer";
+                taskElement.onclick = function () {
+                    taksDone(this);
+                }
+                taskItems.append(taskElement)
+                taskInput.value = ""; // clear input
+                n++
+            }
+        }
+        function taksDone(task) {
+            task.classList.toggle("completed");
+            console.log(taskItems);
+        }
+
+    </script>
+</body>
+
+</html>
