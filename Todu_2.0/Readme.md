@@ -3,7 +3,6 @@
 
 A retro-styled, interactive To-Do web app built with pure HTML, CSS, and JavaScript. Designed to boost your productivity while keeping things fun and visually appealing!
 
-![Todu Preview](./Preview.png)
 
 ## 🚀 Features
 
