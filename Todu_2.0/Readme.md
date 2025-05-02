@@ -1,3 +1,4 @@
+
 # 📝 Todu 2.0
 
 A retro-styled, interactive To-Do web app built with pure HTML, CSS, and JavaScript. Designed to boost your productivity while keeping things fun and visually appealing!
@@ -24,17 +25,14 @@ A retro-styled, interactive To-Do web app built with pure HTML, CSS, and JavaScr
 - Responsive layout with a fresh green theme
 - Smooth interactions and transitions for better UX
 
-## 📂 Folder Structure
+## 📂 Project Structure
 
+```
 Todu_2.0/
-│
-├── index.html # Main HTML file (includes inline CSS and JavaScript)
-├── images.png # Image shown upon task completion
-└── README.md # Project documentation
-
-bash
-Copy
-Edit
+├── index.html         # Main HTML file (includes inline CSS and JavaScript)
+├── images.png         # Image shown upon task completion
+└── README.md          # Project documentation
+```
 
 ## 💡 How to Run
 
@@ -43,22 +41,20 @@ Edit
 ```bash
 git clone https://github.com/M-Salman-khan/Web-Projects.git
 cd Web-Projects/Todu_2.0
-Open index.html in any web browser.
+```
 
-Start managing your daily tasks!
+2. Open `index.html` in any web browser.
 
-📸 Preview
+3. Start managing your daily tasks!
 
+## 📸 Preview
 
-📄 License
-This project is licensed under the MIT License.
+![Completion Screenshot](./images.png)
 
-Enjoy being productive with a retro twist! 🎮✅
+## 📄 License
 
-yaml
-Copy
-Edit
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
 ---
 
-Would you like me to save this as a downloadable file for you?
+Enjoy being productive with a retro twist! 🎮✅
