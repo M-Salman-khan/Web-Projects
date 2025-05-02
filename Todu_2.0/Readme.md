@@ -49,7 +49,7 @@ cd Web-Projects/Todu_2.0
 
 ## 📸 Preview
 
-![Completion Screenshot](./images.png)
+![Completion Screenshot](./Preview.png)
 
 ## 📄 License
 
