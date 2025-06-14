@@ -9,7 +9,7 @@ We welcome all contributions, especially from **first-time contributors**. Follo
 1. **Fork** this repository.
 2. **Clone** your forked repo:
    ```bash
-   git clone https://github.com/your-username/web-dev-mini-projects.git
+   git clone https://github.com/M-Salman-khan/Web-Projects.git
    ```
 3. **Create a new branch**:
    ```bash
