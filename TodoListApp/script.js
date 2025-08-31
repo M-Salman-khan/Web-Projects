@@ -1,12 +1,10 @@
 (function (app) {
     'use strict';
 
-    let now = new Date();
-    const currentTime = `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
     // console.log(currentTime)
-    let hours = now.getHours()
-    let minutes = now.getMinutes()
-    let seconds = now.getSeconds()
+    // let hours = now.getHours()
+    // let minutes = now.getMinutes()
+    // let seconds = now.getSeconds()
     const submitbtn = document.querySelector(".add")
     const userInput = document.querySelector("#userInput")
     const goalTime = document.querySelector("#goalTime")
@@ -30,7 +28,7 @@
         </div>
         <div class="side-2">
             <label class="head-para" for="checkbox${id}">${taskName}</label>
-            <label id="time" for="checkbox${id}">Time : ${goalTime.value || currentTime}</label>
+            <label id="time" for="checkbox${id}">Time : ${goalTime.value || getFormattedTime(new Date())}</label>
         </div>
         <div class="side-3">
                 <button class="dlt" onclick="app.taskDlt(this)">Delete</button>
@@ -42,6 +40,10 @@
         goalTime.value = "";  // Clear time input
         id++
     }
+
+    function getFormattedTime(date){
+        return `${String(date.getHours()).padStart(2, '0')}:${String(date.getMinutes()).padStart(2, '0')}`;
+    } 
 
     app.taskDlt = function (button) {
         button.closest(".task").remove()
