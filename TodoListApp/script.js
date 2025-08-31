@@ -11,8 +11,14 @@
         return `${String(date.getHours()).padStart(2, '0')}:${String(date.getMinutes()).padStart(2, '0')}`;
     }
 
+    function sanitizeInput(rawInput) {
+        const div = document.createElement('div');
+        div.textContent = rawInput;
+        return div.innerHTML;
+    }
+
     function addTask() {
-        let taskName = userInput.value
+        let taskName = sanitizeInput(userInput.value);
         if (taskName === "") {
             alert("Task cannot be empty!");
             return;
