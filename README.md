@@ -12,8 +12,8 @@ This repository contains many mini projects. Feel free to contribute to the proj
 | Startup Landing Page                           |   ⏳   |
 | E-commerce Product Page                        |   ⏳   |
 | Real Estate Listing Page                       |   ⏳   |
-| Travel Agency Website                          |   ⏳   |
-| Fitness Trainer Website                        |   ✅   |
+| Travel Agency Website                          |   ✅   |
+| Fitness Trainer Website                        |   ⏳   |
 | Event Invitation Page                          |   ⏳   |
 | Concert or Music Event Page                    |   ⏳   |
 | Birthday Party Invitation Page                 |   ⏳   |
