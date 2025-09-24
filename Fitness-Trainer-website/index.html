@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FitForge — Personal Trainers & Classes</title>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Meta -->
+  <meta name="description" content="FitForge - professional personal trainers, group classes and training plans" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">FitForge</a>
+
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#trainers">Trainers</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-primary" id="book-now" href="#book">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Train Smart. Get Strong. Feel Confident.</h1>
+        <p>Personalized training plans, certified trainers, small-group classes, and nutrition coaching — all in one place.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" id="cta-book" href="#book">Book a Session</a>
+          <a class="btn btn-ghost" href="#trainers">Meet Trainers</a>
+        </div>
+        <ul class="quick-features">
+          <li>Certified trainers</li>
+          <li>Progress tracking</li>
+          <li>Nutrition guidance</li>
+        </ul>
+      </div>
+
+      <div class="hero-card" aria-hidden="true">
+        <!-- simple stylized trainer card -->
+        <div class="profile">
+          <div class="avatar">AL</div>
+          <div class="profile-info">
+            <h3>Alex Lee</h3>
+            <p>Strength & Conditioning Coach</p>
+            <div class="rating">⭐ 4.9 <span class="small">• 1.2k sessions</span></div>
+          </div>
+        </div>
+        <p class="card-note">Start with a free 15-minute consult. Flexible online & in-person sessions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="icon">🏋️‍♀️</div>
+          <h3>Personal Training</h3>
+          <p>One-on-one plans customized to your goals — strength, weight loss, or sport-specific training.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">🤝</div>
+          <h3>Small Group Classes</h3>
+          <p>Motivating group sessions with limited class size to ensure attention on form and progress.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">🥗</div>
+          <h3>Nutrition Coaching</h3>
+          <p>Simple, practical meal plans and habit-based coaching to support workouts and recovery.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">📈</div>
+          <h3>Progress Tracking</h3>
+          <p>Track workouts, body metrics and improvements with our weekly progress review.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trainers -->
+  <section id="trainers" class="section pale">
+    <div class="container">
+      <h2 class="section-title">Meet Our Trainers</h2>
+      <p class="lead">Certified professionals with specialties across strength, mobility, HIIT, and rehabilitation.</p>
+
+      <div class="trainers-grid">
+        <!-- trainer card 1 -->
+        <article class="trainer-card">
+          <div class="t-avatar" aria-hidden="true" style="background-image:linear-gradient(135deg,#ffc857,#ff6b6b);">AL</div>
+          <div class="t-body">
+            <h3>Alex Lee</h3>
+            <p class="meta">Strength & Conditioning</p>
+            <p class="desc">Olympic lifting technique, hypertrophy programs and competition prep.</p>
+            <div class="t-actions">
+              <button class="btn btn-sm btn-outline" data-trainer="Alex Lee" data-specialty="Strength & Conditioning">View</button>
+              <button class="btn btn-sm btn-primary book-btn" data-trainer="Alex Lee">Book</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- trainer card 2 -->
+        <article class="trainer-card">
+          <div class="t-avatar" aria-hidden="true" style="background-image:linear-gradient(135deg,#6aace3,#9b59b6);">MJ</div>
+          <div class="t-body">
+            <h3>Meera Joshi</h3>
+            <p class="meta">Yoga & Mobility</p>
+            <p class="desc">Blend of restorative yoga and mobility drills to improve performance and reduce injuries.</p>
+            <div class="t-actions">
+              <button class="btn btn-sm btn-outline" data-trainer="Meera Joshi" data-specialty="Yoga & Mobility">View</button>
+              <button class="btn btn-sm btn-primary book-btn" data-trainer="Meera Joshi">Book</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- trainer card 3 -->
+        <article class="trainer-card">
+          <div class="t-avatar" aria-hidden="true" style="background-image:linear-gradient(135deg,#72efdd,#60c657);">RK</div>
+          <div class="t-body">
+            <h3>Rohan Kapoor</h3>
+            <p class="meta">HIIT & Conditioning</p>
+            <p class="desc">High-intensity interval sessions for calorie burn, cardio endurance and metabolic health.</p>
+            <div class="t-actions">
+              <button class="btn btn-sm btn-outline" data-trainer="Rohan Kapoor" data-specialty="HIIT & Conditioning">View</button>
+              <button class="btn btn-sm btn-primary book-btn" data-trainer="Rohan Kapoor">Book</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schedule -->
+  <section id="schedule" class="section">
+    <div class="container">
+      <h2 class="section-title">Weekly Schedule</h2>
+      <p class="lead">Classes & available trainer slots for the week.</p>
+
+      <div class="schedule-wrap">
+        <table class="schedule">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+              <th>Sat</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>6:00 - 7:00</td>
+              <td class="slot">Alex (Strength)</td>
+              <td class="slot">—</td>
+              <td class="slot">Meera (Yoga)</td>
+              <td class="slot">—</td>
+              <td class="slot">Rohan (HIIT)</td>
+              <td class="slot">Group Bootcamp</td>
+            </tr>
+            <tr>
+              <td>7:30 - 8:30</td>
+              <td class="slot">Rohan (HIIT)</td>
+              <td class="slot">Alex (Strength)</td>
+              <td class="slot">—</td>
+              <td class="slot">Meera (Yoga)</td>
+              <td class="slot">—</td>
+              <td class="slot">Open Gym</td>
+            </tr>
+            <tr>
+              <td>18:00 - 19:00</td>
+              <td class="slot">Group Strength</td>
+              <td class="slot">Meera (Yoga)</td>
+              <td class="slot">Alex (Strength)</td>
+              <td class="slot">Rohan (HIIT)</td>
+              <td class="slot">Group Conditioning</td>
+              <td class="slot">—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Booking anchor -->
+  <section id="book" class="section pale">
+    <div class="container">
+      <h2 class="section-title">Book a Session</h2>
+      <p class="lead">Tell us what you want — we’ll pair you with the right trainer.</p>
+
+      <form id="booking-form" class="form-grid" novalidate>
+        <div class="form-group">
+          <label for="name">Full name</label>
+          <input id="name" name="name" required placeholder="Your name" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="you@email.com" />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" required placeholder="+91 98765 43210" />
+        </div>
+
+        <div class="form-group">
+          <label for="trainer">Preferred Trainer</label>
+          <select id="trainer" name="trainer">
+            <option value="">No preference</option>
+            <option>Alex Lee</option>
+            <option>Meera Joshi</option>
+            <option>Rohan Kapoor</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="date">Preferred Date</label>
+          <input id="date" name="date" type="date" required />
+        </div>
+
+        <div class="form-group">
+          <label for="notes">Notes</label>
+          <textarea id="notes" name="notes" rows="3" placeholder="Goals or injuries (optional)"></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Send Booking Request</button>
+          <button type="reset" class="btn btn-ghost">Reset</button>
+        </div>
+
+        <div id="form-msg" class="form-msg" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container contact-grid">
+      <div>
+        <h3>Contact Us</h3>
+        <p>Have questions? Email us at <a href="mailto:hello@fitforge.example">hello@fitforge.example</a> or call +91 22 1234 5678.</p>
+        <ul class="contact-list">
+          <li>📍  Mumbai</li>
+          <li>⏰ Mon–Sat 6:00–20:00</li>
+          <li>🧑‍⚕️ Certified trainers</li>
+        </ul>
+      </div>
+
+      <form id="contact-form" class="contact-form" novalidate>
+        <label for="c-name">Name</label>
+        <input id="c-name" required />
+
+        <label for="c-email">Email</label>
+        <input id="c-email" type="email" required />
+
+        <label for="c-message">Message</label>
+        <textarea id="c-message" rows="4" required></textarea>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </div>
+
+        <div id="contact-msg" class="form-msg" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> FitForge. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="#services">Services</a>
+        <a href="#trainers">Trainers</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Booking Modal (hidden) -->
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-panel">
+      <button id="modal-close" class="modal-close" aria-label="Close">&times;</button>
+      <h3 id="modal-title">Book Trainer</h3>
+      <form id="modal-form" novalidate>
+        <label for="m-name">Name</label>
+        <input id="m-name" required />
+
+        <label for="m-email">Email</label>
+        <input id="m-email" type="email" required />
+
+        <label for="m-date">Preferred Date</label>
+        <input id="m-date" type="date" required />
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Confirm Booking</button>
+        </div>
+        <div id="modal-msg" class="form-msg" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
